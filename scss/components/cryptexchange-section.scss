@@ -1,0 +1,235 @@
+.cryptexchange-section {
+  padding: var(--rhythm-1) 0;
+  position: relative;
+  &__container {
+  }
+  &__row {
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+  &__col {
+    &--picture {
+      @media (max-width: $exl) {
+        max-width: 24%;
+        flex-basis: 24%;
+      }
+      @media (max-width: $lg) {
+        max-width: 33.3333333333%;
+        flex-basis: 33.3333333333%;
+      }
+      @media (max-width: $md) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &--content {
+      @media (max-width: $exl) {
+        max-width: 73%;
+        flex-basis: 73%;
+      }
+      @media (max-width: $lg) {
+        max-width: 66.6666666667%;
+        flex-basis: 66.6666666667%;
+      }
+      @media (max-width: $md) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__picture {
+    user-select: none;
+    pointer-events: none;
+    &--size {
+      &-1 {
+        max-width: 464rem;
+        @media (max-width: $lg) {
+          max-width: 273rem;
+        }
+        @media (max-width: $md) {
+          max-width: 164rem;
+          position: absolute;
+          top: 0;
+          right: var(--gap);
+          z-index: 1;
+        }
+        @media (max-width: $sm) {
+          max-width: 107rem;
+          top: -26rem;
+        }
+      }
+      &-2 {
+        max-width: 660rem;
+        margin-right: -5rem;
+        @media (max-width: $md) {
+          margin: 0;
+          margin-top: -180rem;
+          position: absolute;
+          top: 50%;
+          right: -140rem;
+        }
+        @media (max-width: $sm) {
+          max-width: 114rem;
+          top: 164rem;
+          right: -40rem;
+        }
+      }
+      &-3 {
+        max-width: 344rem;
+        @media (max-width: $md) {
+          max-width: 200rem;
+          margin-top: -90rem;
+          position: absolute;
+          top: 50%;
+          right: var(--gap-);
+        }
+        @media (max-width: $sm) {
+          max-width: 110rem;
+          top: 100%;
+          right: -28rem;
+          margin-top: -70rem;
+        }
+      }
+      &-4 {
+        @media (max-width: $sm) {
+          max-width: 158rem;
+          position: absolute;
+          bottom: 0;
+          right: -28rem;
+          z-index: -1;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__content {
+    &--size {
+      &-md {
+        .cryptexchange-section__text {
+          max-width: 700rem;
+          @media (max-width: $lg) {
+            max-width: 520rem;
+          }
+          @media (max-width: $md) {
+            max-width: 460rem;
+          }
+        }
+      }
+    }
+  }
+  &__title {
+    margin: 0 0 var(--rhythm-2);
+    text-transform: uppercase;
+    @media (max-width: $sm) {
+      margin-right: 70rem;
+    }
+  }
+  &__text {
+    max-width: 804rem;
+    margin: 0 0 var(--rhythm-3);
+    line-height: $lineHeightMd;
+    @media (max-width: $lg) {
+      max-width: 440rem;
+      line-height: $lineHeightELg;
+      font-family: $fontAccent;
+    }
+    @media (max-width: $md) {
+      max-width: 372rem;
+      margin-bottom: 24rem;
+    }
+    @media (max-width: $sm) {
+      margin-right: 15rem;
+    }
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 20rem;
+          @media (max-width: $lg) {
+            margin-bottom: 12rem;
+          }
+        }
+      }
+    }
+  }
+  &__list {
+    margin-bottom: var(--rhythm-3);
+    &-col {
+      @media (max-width: $lg) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+      &:not(:last-child) {
+        @media (max-width: $lg) {
+          margin-bottom: var(--rhythm-3);
+        }
+        @media (max-width: $sm) {
+          margin-bottom: 8rem;
+        }
+      }
+    }
+    &-card {
+      height: 100%;
+      padding: 20rem 32rem;
+      display: inline-block;
+      font-size: var(--fs-default);
+      color: rgba($whiteColor, .9);
+      @media (max-width: $lg) {
+        margin-right: 19%;
+      }
+      @media (max-width: $md) {
+        margin-right: 10%;
+      }
+      @media (max-width: $sm) {
+        padding: 15rem;
+        margin-right: 0;
+        font-size: 14rem;
+      }
+    }
+  }
+  &__btns {
+    margin-top: var(--rhythm-2);
+    @media (max-width: $lg) {
+      margin-top: 24rem;
+    }
+    @media (max-width: $md) {
+      margin-top: 32rem;
+    }
+  }
+  .btn {
+    @media (max-width: $sm) {
+      padding-right: 15rem;
+      padding-left: 15rem;
+    }
+  }
+  .btn-group__col {
+    &:first-child:not(:last-child) {
+      @media (max-width: $sm) {
+        flex-grow: 1;
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+    &:last-child:not(:first-child) {
+      @media (max-width: $sm) {
+        flex-grow: 1;
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+    &:first-child:last-child {
+      .btn {
+        @media (max-width: $sm) {
+          padding-right: 32rem;
+          padding-left: 32rem;
+        }
+      }
+    }
+  }
+}

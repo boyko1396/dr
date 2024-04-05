@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Decentralized decisions'
+  })
+  <body>
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header header--sticky'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- intro-section BEGIN -->
+          <section class="intro-section">
+            <picture class="circle-blur circle-blur--size-md circle-blur--1">
+              <source
+                srcset="images/circle-blur-1@2x.webp 2x,
+                        images/circle-blur-1.webp"
+                        type="image/webp">
+              <img
+                src="images/circle-blur-1.png"
+                srcset="images/circle-blur-1@2x.png 2x"
+                width="1240" height="1240">
+            </picture>
+            <picture class="circle-blur circle-blur--size-md circle-blur--2">
+              <source
+                srcset="images/circle-blur-1@2x.webp 2x,
+                        images/circle-blur-1.webp"
+                        type="image/webp">
+              <img
+                src="images/circle-blur-1.png"
+                srcset="images/circle-blur-1@2x.png 2x"
+                width="1240" height="1240">
+            </picture>
+            <div class="container container--size-md intro-section__container">
+              <div class="intro-section__box">
+                <div class="u-box u-box--theme-gradient-accent intro-section__main">
+                  <div class="intro-section__main-content">
+                    <h1 class="intro-section__main-title"><span>Децентрализованные</span> решения</h1>
+                    <p class="intro-section__main-subtitle">Бесконечное доверие<br>Бесконечные возможности</p>
+                  </div>
+                  <button type="button" class="btn-call btn-call--theme-accent btn-call--size-lg intro-section__main-btn" data-modal="popup-form">Связаться с&nbsp;нами</button>
+                </div>
+                <picture class="intro-section__main-picture">
+                  <source
+                    media="(max-width: 639px)"
+                    srcset="images/intro-hero-sm@2x.webp 2x,
+                            images/intro-hero-sm.webp"
+                            type="image/webp">
+                  <source
+                    media="(max-width: 639px)"
+                    srcset="images/intro-hero-sm@2x.png 2x,
+                            images/intro-hero-sm.png"
+                            type="image/png">
+                  <source
+                    srcset="images/intro-hero@2x.webp 2x,
+                            images/intro-hero.webp"
+                            type="image/webp">
+                  <img
+                    src="images/intro-hero.png"
+                    srcset="images/intro-hero@2x.png 2x"
+                    alt="Децентрализованные решения"
+                    width="565" height="515">
+                </picture>
+              </div>
+              <div class="intro-section__list">
+                <div class="intro-section__list-col">
+                  <div class="u-box u-box--theme-gray benefits-hero-card intro-section__list-card">
+                    <picture class="benefits-hero-card__picture is-position-left-top">
+                      <source
+                        srcset="images/benefits-hero-card-1@2x.webp 2x,
+                                images/benefits-hero-card-1.webp"
+                                type="image/webp">
+                      <img
+                        src="images/benefits-hero-card-1.png"
+                        srcset="images/benefits-hero-card-1@2x.png 2x"
+                        alt="Перенесем ваш бизнес в блокчейн среду"
+                        width="110" height="110">
+                    </picture>
+                    <div class="benefits-hero-card__inner">
+                      <div class="benefits-hero-card__content">
+                        <p>Перенесем ваш бизнес в блокчейн среду</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="intro-section__list-col">
+                  <div class="u-box u-box--theme-gray benefits-hero-card intro-section__list-card">
+                    <picture class="benefits-hero-card__picture is-position-right-top">
+                      <source
+                        srcset="images/benefits-hero-card-2@2x.webp 2x,
+                                images/benefits-hero-card-2.webp"
+                                type="image/webp">
+                      <img
+                        src="images/benefits-hero-card-2.png"
+                        srcset="images/benefits-hero-card-2@2x.png 2x"
+                        alt="Автоматизируем рабочие процессы смартконтрактами"
+                        width="110" height="110">
+                    </picture>
+                    <div class="benefits-hero-card__inner">
+                      <div class="benefits-hero-card__content">
+                        <p>Автоматизируем рабочие процессы смартконтрактами</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="intro-section__list-col">
+                  <div class="u-box u-box--theme-gray benefits-hero-card intro-section__list-card">
+                    <picture class="benefits-hero-card__picture is-position-right-bottom">
+                      <source
+                        srcset="images/benefits-hero-card-3@2x.webp 2x,
+                                images/benefits-hero-card-3.webp"
+                                type="image/webp">
+                      <img
+                        src="images/benefits-hero-card-3.png"
+                        srcset="images/benefits-hero-card-3@2x.png 2x"
+                        alt="Повысим информационную безопасность компании и сотрудников"
+                        width="110" height="110">
+                    </picture>
+                    <div class="benefits-hero-card__inner">
+                      <div class="benefits-hero-card__content">
+                        <p>Повысим информационную безопасность компании и сотрудников</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="intro-section__list-col">
+                  <div class="u-box u-box--theme-gray benefits-hero-card intro-section__list-card">
+                    <picture class="benefits-hero-card__picture is-position-right-top-up">
+                      <source
+                        srcset="images/benefits-hero-card-4@2x.webp 2x,
+                                images/benefits-hero-card-4.webp"
+                                type="image/webp">
+                      <img
+                        src="images/benefits-hero-card-4.png"
+                        srcset="images/benefits-hero-card-4@2x.png 2x"
+                        alt="Анонимно и безопасно купим/продадим для вас цифровые финансовые активы"
+                        width="110" height="110">
+                    </picture>
+                    <div class="benefits-hero-card__inner">
+                      <div class="benefits-hero-card__content">
+                        <p>Анонимно и безопасно купим/продадим для вас цифровые финансовые активы</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="intro-section__list-col">
+                  <div class="u-box u-box--theme-gray benefits-hero-card intro-section__list-card">
+                    <picture class="benefits-hero-card__picture is-position-right-top-up">
+                      <source
+                        srcset="images/benefits-hero-card-5@2x.webp 2x,
+                                images/benefits-hero-card-5.webp"
+                                type="image/webp">
+                      <img
+                        src="images/benefits-hero-card-5.png"
+                        srcset="images/benefits-hero-card-5@2x.png 2x"
+                        alt="Консультации профессиональных аналитиков, трейдеров и веб-разработчиков"
+                        width="110" height="110">
+                    </picture>
+                    <div class="benefits-hero-card__inner">
+                      <div class="benefits-hero-card__content">
+                        <p>Консультации профессиональных&nbsp;аналитиков, трейдеров и веб-разработчиков</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- intro-section END -->
+          <!-- cryptexchange-section BEGIN -->
+          <section class="cryptexchange-section">
+            <div class="container container--size-md cryptexchange-section__container">
+              <div class="row cryptexchange-section__row">
+                <div class="row__col--4 cryptexchange-section__col cryptexchange-section__col--picture">
+                  <picture class="cryptexchange-section__picture cryptexchange-section__picture--size-1">
+                    <source
+                      media="(max-width: 639px)"
+                      srcset="images/cryptexchange-section-hero-1-xs@2x.webp 2x,
+                              images/cryptexchange-section-hero-1-xs.webp"
+                              type="image/webp">
+                    <source
+                      media="(max-width: 639px)"
+                      srcset="images/cryptexchange-section-hero-1-xs@2x.png 2x,
+                              images/cryptexchange-section-hero-1-xs.png"
+                              type="image/png">
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="images/cryptexchange-section-hero-1-md@2x.webp 2x,
+                              images/cryptexchange-section-hero-1-md.webp"
+                              type="image/webp">
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="images/cryptexchange-section-hero-1-md@2x.png 2x,
+                              images/cryptexchange-section-hero-1-md.png"
+                              type="image/png">
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="images/cryptexchange-section-hero-1-lg@2x.webp 2x,
+                              images/cryptexchange-section-hero-1-lg.webp"
+                              type="image/webp">
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="images/cryptexchange-section-hero-1-lg@2x.png 2x,
+                              images/cryptexchange-section-hero-1-lg.png"
+                              type="image/png">
+                    <source
+                      srcset="images/cryptexchange-section-hero-1@2x.webp 2x,
+                              images/cryptexchange-section-hero-1.webp"
+                              type="image/webp">
+                    <img
+                      src="images/cryptexchange-section-hero-1.png"
+                      srcset="images/cryptexchange-section-hero-1@2x.png 2x"
+                      alt="Криптообмен"
+                      width="464" height="264">
+                  </picture>
+                </div>
+                <div class="row__col--8 cryptexchange-section__col cryptexchange-section__col--content">
+                  <div class="cryptexchange-section__content">
+                    <h2 class="cryptexchange-section__title">Криптообмен</h2>
+                    <div class="d-sm-none content cryptexchange-section__text">
+                      <p>Надежный сервис по обмену цифровых валют/криптовалют в фиат/наличные и обратно! Предлагаем безопасный обмен по выгодным курсам в 46 городах и 11 странах</p>
+                    </div>
+                    <div class="d-sm-block content cryptexchange-section__text">
+                      <p>Надежный сервис по обмену цифровых валют/криптовалют в фиат/наличные и обратно!</p>
+                      <p>Предлагаем безопасный обмен по выгодным курсам в 46 городах и 11 странах</p>
+                    </div>
+                    <div class="row cryptexchange-section__list">
+                      <div class="row__col--6 cryptexchange-section__list-col">
+                        <div class="content u-box u-box--theme-gray cryptexchange-section__list-card">
+                          <p>Обмен проходит в нашем офисе "стол в стол" по&nbsp;предварительной записи. C собой необходимо иметь документ, удостоверяющий личность (паспорт, загранпаспорт или водительское удостоверение).</p>
+                        </div>
+                      </div>
+                      <div class="row__col--6 cryptexchange-section__list-col">
+                        <div class="contnet u-box u-box--theme-gray cryptexchange-section__list-card">
+                          <p>Курс фиксируем в момент проведения сделки и пересчета от Вас наличных/получения криптовалюты. Далее отправляем криптовалюту на предоставленный вами адрес, а при обратном обмене - выдаем наличные.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btn-group cryptexchange-section__btns">
+                      <div class="btn-group__inner">
+                        <div class="btn-group__col">
+                          <a href="javascript:void(0);" class="btn btn--theme-accent btn--size-md" data-modal="popup-services-1">
+                            <span class="btn__inner">
+                              <span class="btn__title">Подробнее</span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <picture class="d-sm-block cryptexchange-section__picture cryptexchange-section__picture--size-4">
+                      <source
+                        srcset="images/cryptexchange-section-hero-4-sm@2x.webp 2x,
+                                images/cryptexchange-section-hero-4-sm.webp"
+                                type="image/webp">
+                      <img
+                        src="images/cryptexchange-section-hero-4-sm.png"
+                        srcset="images/cryptexchange-section-hero-4-sm@2x.png 2x"
+                        alt="Криптообмен"
+                        width="158" height="191">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- cryptexchange-section END -->
+          <!-- cryptexchange-section BEGIN -->
+          <section class="cryptexchange-section">
+            <picture class="circle-blur circle-blur--size-md circle-blur--3">
+              <source
+                srcset="images/circle-blur-1@2x.webp 2x,
+                        images/circle-blur-1.webp"
+                        type="image/webp">
+              <img
+                src="images/circle-blur-1.png"
+                srcset="images/circle-blur-1@2x.png 2x"
+                width="1240" height="1240">
+            </picture>
+            <div class="container container--size-md cryptexchange-section__container">
+              <div class="row cryptexchange-section__row">
+                <div class="row__col--7 cryptexchange-section__col cryptexchange-section__col--content">
+                  <div class="cryptexchange-section__content cryptexchange-section__content--size-md">
+                    <h2 class="cryptexchange-section__title">Предоставление<br>серверных мощностей</h2>
+                    <div class="content cryptexchange-section__text">
+                      <p>Предоставление серверных мощностей под&nbsp;любой&nbsp;тип&nbsp;бизнеса и&nbsp;занятости объемом более 10М ТБ</p>
+                    </div>
+                    <div class="row cryptexchange-section__list">
+                      <div class="row__col--7 cryptexchange-section__list-col">
+                        <div class="content u-box u-box--theme-gray cryptexchange-section__list-card">
+                          <p>Идеально подходит для:</p>
+                          <ul>
+                            <li>Блокчейн технологий</li>
+                            <li>Для организаций с резервным копированием</li>
+                            <li>Игровой индустрии</li>
+                            <li>Бизнеса онлайн</li>
+                            <li>Хранение базы данных</li>
+                            <li>Для фриланса</li>
+                            <li>Для офисных задач</li>
+                            <li>Для нод, для торговли</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content cryptexchange-section__text">
+                      <p>Серверы подходят для различных задач.<br>Мы выдаем права администратора заказчик устанавливает любой софт и безопасно работает на удаленном сервере. </p>
+                    </div>
+                    <div class="btn-group cryptexchange-section__btns">
+                      <div class="btn-group__inner">
+                        <div class="btn-group__col">
+                          <a href="#" class="btn btn--theme-accent btn--size-md">
+                            <span class="btn__inner">
+                              <span class="btn__title">Подробнее</span>
+                            </span>
+                          </a>
+                        </div>
+                        <div class="btn-group__col">
+                          <a href="#" class="btn btn--theme-lime btn--size-md">
+                            <span class="btn__inner">
+                              <span class="btn__title">Уточнить цену</span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col--5 cryptexchange-section__col cryptexchange-section__col--picture">
+                  <picture class="cryptexchange-section__picture cryptexchange-section__picture--size-2">
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="images/cryptexchange-section-hero-2-md@2x.webp 2x,
+                              images/cryptexchange-section-hero-2-md.webp"
+                              type="image/webp">
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="images/cryptexchange-section-hero-2-md@2x.png 2x,
+                              images/cryptexchange-section-hero-2-md.png"
+                              type="image/png">
+                    <source
+                      srcset="images/cryptexchange-section-hero-2@2x.webp 2x,
+                              images/cryptexchange-section-hero-2.webp"
+                              type="image/webp">
+                    <img
+                      src="images/cryptexchange-section-hero-2.png"
+                      srcset="images/cryptexchange-section-hero-2@2x.png 2x"
+                      alt="Предоставление серверных мощностей"
+                      width="660" height="663">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- cryptexchange-section END -->
+          <!-- services-section BEGIN -->
+          <section id="services-section" class="services-section">
+            <picture class="services-section__bg">
+                    <source
+                      media="(max-width: 639px)"
+                      srcset="images/services-section-bg-sm.webp"
+                              type="image/webp">
+                    <source
+                      media="(max-width: 639px)"
+                      srcset="images/services-section-bg-sm.png"
+                              type="image/png">
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="images/services-section-bg-md.webp"
+                              type="image/webp">
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="images/services-section-bg-md.png"
+                              type="image/png">
+                    <source
+                      srcset="images/services-section-bg.webp"
+                              type="image/webp">
+                    <img
+                      src="images/services-section-bg.png"
+                      alt="Услуги компании"
+                      width="1920" height="719">
+            </picture>
+            <div class="container container--size-md services-section__container">
+              <h2 class="services-section__title">Услуги компании</h2>
+              <p class="title-size-3 services-section__subtitle">Мы разработаем для вас:</p>
+              <div class="js-services-slider-init services-section__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide services-section__slider-slide">
+                    <article class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime services-card services-section__slider-card">
+                      <h3 class="title-size-4 services-card__title">Автоматизация<br>бизнеса ІТ-решения</h3>
+                      <div class="content services-card__text">
+                        <p>Это современные технологии, которые помогут оптимизировать рабочие процессы в компании и повысить эффективность бизнеса. Решает проблему по оптимизации и автоматизации процессов</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide services-section__slider-slide">
+                    <article class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime services-card services-section__slider-card">
+                      <h3 class="title-size-4 services-card__title">Токенизация<br>бизнеса</h3>
+                      <div class="content services-card__text">
+                        <p>Это инновационный метод привлечения инвестиций и увеличения ликвидности компании, делая ее активы доступными для широкой аудитории. Отличная возможность открыть новые рынки и сделать покупку акций более доступной. Что привлечет увеличение инвестиций.</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide services-section__slider-slide">
+                    <article class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime services-card services-section__slider-card">
+                      <h3 class="title-size-4 services-card__title">WEBAPP<br>Телеграм</h3>
+                      <div class="content services-card__text">
+                        <p>Это инновационные онлайн платформы, которые помогут вашему бизнесу быть в курсе всех нововведений и быть ближе к вашим клиентам. Отличный мост между компанией и клиентами.</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide services-section__slider-slide">
+                    <article class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime services-card services-section__slider-card">
+                      <h3 class="title-size-4 services-card__title">Индивидуальная разработка блокчейн проекта</h3>
+                      <div class="content services-card__text">
+                        <p>Это возможность создать уникальное блокчейн решение, которое поможет вашему бизнесу быть вне конкурентов. Блокчейн технология откроет для вас рынок WEB 3.0 и ускорит процесс развития вашего бизнеса.</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide services-section__slider-slide">
+                    <article class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime services-card services-section__slider-card">
+                      <h3 class="title-size-4 services-card__title">Разработка<br>MLM систем</h3>
+                      <div class="content services-card__text">
+                        <p>Это отличный способ увеличить продажи и привлечь новых клиентов за счет уникальной маркетинговой стратегии и сетевого взаимодействия. Поможет уменьшить нагрузку на бюджет, и привлечет больше лояльных пользователей.</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide services-section__slider-slide">
+                    <article class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime services-card services-section__slider-card">
+                      <h3 class="title-size-4 services-card__title">Индивидуальная<br>разработка IT решений</h3>
+                      <div class="content services-card__text">
+                        <p>Это персонализированные технологические решения для вашего бизнеса, которые помогут вам быть на шаг впереди конкурентов.<br>Именно технологии в современном мире определяет жизнеспособность и развитие вашего бизнеса.</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- services-section END -->
+          <!-- cyber-section BEGIN -->
+          <section class="cyber-section">
+            <picture class="circle-blur circle-blur--size-md circle-blur--4">
+              <source
+                srcset="images/circle-blur-1@2x.webp 2x,
+                        images/circle-blur-1.webp"
+                        type="image/webp">
+              <img
+                src="images/circle-blur-1.png"
+                srcset="images/circle-blur-1@2x.png 2x"
+                width="1240" height="1240">
+            </picture>
+            <div class="container container--size-md cyber-section__container">
+              <h2 class="cyber-section__title">Информационная и&nbsp;кибербезопасность</h2>
+              <div class="row cyber-section__row">
+                <div class="row__col--5 cyber-section__col cyber-section__col--content">
+                  <div class="cyber-section__content">
+                    <h4 class="cyber-section__subtitle">Наша цель – всесторонняя и надёжная защита бизнеса от&nbsp;любых видов атак:</h4>
+                    <div class="content cyber-section__text">
+                      <ul>
+                        <li>Высокотехнологичные – хакерские атаки, промышленный шпионаж;</li>
+                        <li>Информационные вбросы – защита репутации предприятия;</li>
+                        <li>Все виды экономических и криминальных угроз.</li>
+                      </ul>
+                      <p>Наша миссия — полная ответственность за риски клиента. Возможность топ-менеджмента сосредоточиться на развитии своего дела, не отвлекаясь на решение вопросов безопасности и возмещение убытков от происшествий на предприятии.</p>
+                    </div>
+                    <div class="cyber-section__list">
+                      <div class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime cyber-section__list-card">
+                        <h4 class="cyber-section__list-card-title">Aудит безопасности телекоммуникационной системы предприятия</h4>
+                      </div>
+                      <div class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime cyber-section__list-card">
+                        <h4 class="cyber-section__list-card-title">Проверка системы безопасности предприятия</h4>
+                      </div>
+                      <div class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime cyber-section__list-card">
+                        <h4 class="cyber-section__list-card-title">Проверка соискателей на работу и&nbsp;рабочего персонала</h4>
+                      </div>
+                      <div class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime cyber-section__list-card">
+                        <h4 class="cyber-section__list-card-title">Расследование служебных преступлений</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col--5 cyber-section__col cyber-section__col--main">
+                  <div class="cyber-section__main">
+                    <picture class="cyber-section__picture">
+                      <source
+                        srcset="images/cyber-section-img@2x.webp 2x,
+                                images/cyber-section-img.webp"
+                                type="image/webp">
+                      <img
+                        src="images/cyber-section-img.png"
+                        srcset="images/cyber-section-img@2x.png 2x"
+                        alt="Наш опыт аналитической и оперативной работы позволил специалистам:"
+                        width="160" height="231">
+                    </picture>
+                    <h4 class="cyber-section__subtitle">Наш опыт аналитической и оперативной работы позволил специалистам:</h4>
+                    <div class="content cyber-section__text">
+                      <ul>
+                        <li>Создать уникальную инфраструктуру систем защиты информации от многочисленных инцидентов случайного или злонамеренного характера;</li>
+                        <li>Разрабатывать и внедрять меры по минимизации ущерба в результате данных инцидентов;</li>
+                        <li>Прогнозировать и предотвращать чрезвычайные ситуации как на предприятиях, так и в целях безопасности семьи и частного имущества граждан.</li>
+                      </ul>
+                      <p>Направление основано экс-офицерами, проходившими службу в спецподразделениях различных силовых ведомствах. Сегодня наши специалисты оказывают консультативную и практическую помощь в раскрытии преступлений, розыске преступников и проведении технических экспертиз в том числе органам госбезопасности.</p>
+                      <p>Мы реализуем проекты как с коммерческими, так и государственными структурами.</p>
+                      <p>Мы заинтересованы в долгосрочном партнёрстве и гордимся, что наша работа находит признание у заказчиков.</p>
+                    </div>
+                    <div class="btn-group cyber-section__btns">
+                      <div class="btn-group__inner">
+                        <div class="btn-group__col">
+                          <a href="#" class="btn btn--theme-accent btn--size-md">
+                            <span class="btn__inner">
+                              <span class="btn__title">Подробнее</span>
+                            </span>
+                          </a>
+                        </div>
+                        <div class="btn-group__col">
+                          <a href="#" class="btn btn--theme-lime btn--size-md">
+                            <span class="btn__inner">
+                              <span class="btn__title">Уточнить цену</span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- cyber-section END -->
+          <!-- cryptexchange-section BEGIN -->
+          <section class="cryptexchange-section">
+            <div class="container container--size-md cryptexchange-section__container">
+              <div class="row cryptexchange-section__row">
+                <div class="row__col--6 cryptexchange-section__col cryptexchange-section__col--content">
+                  <div class="cryptexchange-section__content">
+                    <h2 class="cryptexchange-section__title">Хранилище данных</h2>
+                    <div class="content cryptexchange-section__text">
+                      <ul>
+                        <li>Безопасное хранение ваших файлов</li>
+                        <li>При загрузке файлы будут разбиты на части, зашифрованы и отправлены по десяткам устройств (нод) в сети</li>
+                        <li>Общий объем децентрализованного хранилища более 5 000 ТБ</li>
+                      </ul>
+                    </div>
+                    <div class="btn-group cryptexchange-section__btns">
+                      <div class="btn-group__inner">
+                        <div class="btn-group__col">
+                          <a href="#" class="btn btn--theme-accent btn--size-md">
+                            <span class="btn__inner">
+                              <span class="btn__title">Подробнее</span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col--5 cryptexchange-section__col cryptexchange-section__col--picture">
+                  <picture class="cryptexchange-section__picture cryptexchange-section__picture--size-3 ml-auto">
+                    <source
+                      srcset="images/cryptexchange-section-hero-3@2x.webp 2x,
+                              images/cryptexchange-section-hero-3.webp"
+                              type="image/webp">
+                    <img
+                      src="images/cryptexchange-section-hero-3.png"
+                      srcset="images/cryptexchange-section-hero-3@2x.png 2x"
+                      alt="Хранилище данных"
+                      width="344" height="379">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- cryptexchange-section END -->
+          <!-- benefits-section BEGIN -->
+          <section class="benefits-section">
+            <picture class="circle-blur circle-blur--size-md circle-blur--5">
+              <source
+                srcset="images/circle-blur-1@2x.webp 2x,
+                        images/circle-blur-1.webp"
+                        type="image/webp">
+              <img
+                src="images/circle-blur-1.png"
+                srcset="images/circle-blur-1@2x.png 2x"
+                width="1240" height="1240">
+            </picture>
+            <div class="container container--size-md benefits-section__container">
+              <div class="row benefits-section__row">
+                <div class="row__col--4 benefits-section__col benefits-section__col--content">
+                  <div class="benefits-section__content">
+                    <div class="content benefits-section__text">
+                      <p>Использовать децентрализованное хранилище можно различным категориям пользователей и организаций, которые могут заинтересоваться этими услугами.</p>
+                    </div>
+                    <h2 class="title-size-4 benefits-section__subtitle">Вот несколько потенциальных целевых аудиторий для использования децентрализованного хранилища</h2>
+                  </div>
+                </div>
+                <div class="row__col--7 benefits-section__col benefits-section__col--list">
+                  <div class="benefits-section__list">
+                    <div class="benefits-card benefits-section__list-card">
+                      <div class="benefits-card__inner">
+                        <div class="u-box u-box--theme-gray benefits-card__media">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                          </svg>
+                        </div>
+                        <div class="benefits-card__content">
+                          <h4 class="benefits-card__title">Крупные корпорации и предприятия,</h4>
+                          <div class="content benefits-card__text">
+                            <p>которые нуждаются в надежном и безопасном хранилище для своих данных. Децентрализованные хранилища могут предложить им большую степень защиты данных и устойчивость к сбоям.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="benefits-card benefits-section__list-card">
+                      <div class="benefits-card__inner">
+                        <div class="u-box u-box--theme-gray benefits-card__media">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                          </svg>
+                        </div>
+                        <div class="benefits-card__content">
+                          <h4 class="benefits-card__title">﻿Стартапы и малые компании</h4>
+                          <div class="content benefits-card__text">
+                            <p>которые ищут более экономичные способы хранения данных без необходимости инвестировать в собственные серверы и инфраструктуру.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="benefits-card benefits-section__list-card">
+                      <div class="benefits-card__inner">
+                        <div class="u-box u-box--theme-gray benefits-card__media">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                          </svg>
+                        </div>
+                        <div class="benefits-card__content">
+                          <h4 class="benefits-card__title">﻿Индивидуальные пользователи</h4>
+                          <div class="content benefits-card__text">
+                            <p>которые ценят конфиденциальность и безопасность своих данных, а также желают иметь доступ к децентрализованному хранилищу для хранения личных файлов и информации.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="benefits-card benefits-section__list-card">
+                      <div class="benefits-card__inner">
+                        <div class="u-box u-box--theme-gray benefits-card__media">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                          </svg>
+                        </div>
+                        <div class="benefits-card__content">
+                          <h4 class="benefits-card__title">Разработчики приложений и сервисов</h4>
+                          <div class="content benefits-card__text">
+                            <p>которые нуждаются в распределенном хранилище данных&nbsp;для&nbsp;своих проектов.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="benefits-card benefits-section__list-card">
+                      <div class="benefits-card__inner">
+                        <div class="u-box u-box--theme-gray benefits-card__media">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                          </svg>
+                        </div>
+                        <div class="benefits-card__content">
+                          <h4 class="benefits-card__title">Государственные органы или&nbsp;некоммерческие организации</h4>
+                          <div class="content benefits-card__text">
+                            <p>которые ищут способы обеспечить безопасное хранение данных&nbsp;граждан или чувствительной информации.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- benefits-section END -->
+          <!-- principle-section BEGIN -->
+          <section class="principle-section">
+            <div class="container container--size-md principle-section__container">
+              <div class="row principle-section__row">
+                <div class="row__col--4 principle-section__col">
+                  <div class="principle-section__item">
+                    <div class="principle-section__item-content">
+                      <div class="content principle-section__item-text">
+                        <p>Децентрализованное хранилище работает на основе технологии блокчейн или других децентрализованных сетей.</p>
+                      </div>
+                      <h2 class="title-size-4 principle-section__item-title">Вот общий принцип работы децентрализованного хранилища:</h2>
+                    </div>
+                    <picture class="principle-section__item-picture">
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="images/principle-section-img-md@2x.webp 2x,
+                              images/principle-section-img-md.webp"
+                              type="image/webp">
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="images/principle-section-img-md@2x.png 2x,
+                              images/principle-section-img-md.png"
+                              type="image/png">
+                      <source
+                        srcset="images/principle-section-img@2x.webp 2x,
+                                images/principle-section-img.webp"
+                                type="image/webp">
+                      <img
+                        src="images/principle-section-img.png"
+                        srcset="images/principle-section-img@2x.png 2x"
+                        alt="Вот общий принцип работы децентрализованного хранилища:"
+                        width="520" height="420">
+                    </picture>
+                  </div>
+                </div>
+                <div class="row__col--4 principle-section__col">
+                  <article class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime services-card principle-section__card">
+                    <h3 class="d-md-none title-size-4 services-card__title">
+                      <a href="javascript:void(0);" class="services-card__link" data-modal="popup-services-1">Распределенная<br>сеть узлов</a>
+                    </h3>
+                    <h3 class="d-md-block title-size-4 services-card__title">
+                      <a href="javascript:void(0);" class="services-card__link" data-modal="popup-services-1">Распределенная сеть узлов</a>
+                    </h3>
+                    <div class="content services-card__text">
+                      <p>В децентрализованном хранилище данные хранятся и управляются не на централизованном сервере, а на распределенной сети узлов. Эти узлы могут быть компьютерами или серверами, которые соединены между собой через интернет.</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 principle-section__col">
+                  <article class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime services-card principle-section__card">
+                    <h3 class="d-md-none title-size-4 services-card__title">
+                      <a href="javascript:void(0);" class="services-card__link" data-modal="popup-services-1">Шифрование<br>данных</a>
+                    </h3>
+                    <h3 class="d-md-block title-size-4 services-card__title">
+                      <a href="javascript:void(0);" class="services-card__link" data-modal="popup-services-1">Шифрование данных</a>
+                    </h3>
+                    <div class="content services-card__text">
+                      <p>Данные, которые хранятся в&nbsp;децентрализованном хранилище, защищены с помощью шифрования. Это обеспечивает конфиденциальность и безопасность информации.</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 principle-section__col">
+                  <article class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime services-card principle-section__card">
+                    <h3 class="d-md-none title-size-4 services-card__title">
+                      <a href="javascript:void(0);" class="services-card__link" data-modal="popup-services-1">Репликация<br>данных</a>
+                    </h3>
+                    <h3 class="d-md-block title-size-4 services-card__title">
+                      <a href="javascript:void(0);" class="services-card__link" data-modal="popup-services-1">Репликация данных</a>
+                    </h3>
+                    <div class="content services-card__text">
+                      <p>Данные могут быть размножены и храниться на нескольких узлах сети. Это обеспечивает отказоустойчивость и&nbsp;доступность данных в случае сбоев или атак.</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 principle-section__col">
+                  <article class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime services-card principle-section__card">
+                    <h3 class="d-md-none title-size-4 services-card__title">
+                      <a href="javascript:void(0);" class="services-card__link" data-modal="popup-services-1">Консенсусный<br>механизм</a>
+                    </h3>
+                    <h3 class="d-md-block title-size-4 services-card__title">
+                      <a href="javascript:void(0);" class="services-card__link" data-modal="popup-services-1">Консенсусный механизм</a>
+                    </h3>
+                    <div class="content services-card__text">
+                      <p>Для управления данными и подтверждения их целостности в децентрализованном хранилище используется консенсусный механизм. Это может быть механизм голосования, согласования или другие методы, которые позволяют узлам сети достигать единомыслия по состоянию данных.</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 principle-section__col">
+                  <article class="u-box u-box--theme-gradient-accent u-box--hover-gradient-lime services-card principle-section__card">
+                    <h3 class="d-md-none title-size-4 services-card__title">
+                      <a href="javascript:void(0);" class="services-card__link" data-modal="popup-services-1">Доступ<br>к данным</a>
+                    </h3>
+                    <h3 class="d-md-block title-size-4 services-card__title">
+                      <a href="javascript:void(0);" class="services-card__link" data-modal="popup-services-1">Доступ к данным</a>
+                    </h3>
+                    <div class="content services-card__text">
+                      <p>Пользователи могут получить доступ к данным в децентрализованном хранилище через специальные приложения или интерфейсы. Они могут загружать, скачивать и управлять своими данными, сохраненными в распределенной сети.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <footer class="row principle-section__footer">
+                <div class="row__col--7 principle-section__footer-col principle-section__footer-col--text">
+                  <div class="content principle-section__footer-text">
+                    <p>В целом, децентрализованное хранилище предлагает более безопасный и надежный способ хранения данных, защищая их от централизованных атак и обеспечивая высокую степень доступности и конфиденциальности.</p>
+                  </div>
+                </div>
+                <div class="row__col--4 principle-section__footer-col principle-section__footer-col--action">
+                  <a href="#" class="btn btn--theme-lime btn--size-md principle-section__footer-btn">
+                    <span class="btn__inner">
+                      <span class="btn__title">Уточнить цену</span>
+                    </span>
+                  </a>
+                </div>
+              </footer>
+            </div>
+          </section>
+          <!-- principle-section END -->
+          <!-- education-section BEGIN -->
+          <section class="education-section">
+            <picture class="circle-blur circle-blur--size-md circle-blur--6">
+              <source
+                srcset="images/circle-blur-1@2x.webp 2x,
+                        images/circle-blur-1.webp"
+                        type="image/webp">
+              <img
+                src="images/circle-blur-1.png"
+                srcset="images/circle-blur-1@2x.png 2x"
+                width="1240" height="1240">
+            </picture>
+            <div class="container container--size-md education-section__container">
+              <h2 class="education-section__title">Обучение</h2>
+              <div class="content education-section__text">
+                <p>Школа предлагает обучение по курсу, который поможет зарабатывать на рынке криптовалют. В программу обучения включены стратегии торговли на крипте, инвестирование в надежные монеты и токены, альтернатива банковскому вкладу с повышенным доходом через стейкинг и фарминг, а также заработок на NFT — инвестиции в цифровые произведения искусства.</p>
+              </div>
+              <div class="education-section__list-wrapper">
+                <picture class="education-section__picture">
+                  <source
+                    srcset="images/education-section-img@2x.webp 2x,
+                            images/education-section-img.webp"
+                            type="image/webp">
+                  <img
+                    src="images/education-section-img.png"
+                    srcset="images/education-section-img@2x.png 2x"
+                    width="420" height="413">
+                </picture>
+                <div class="education-section__list">
+                  <div class="education-section__list-col">
+                    <article class="u-box u-box--theme-gray u-box--hover-gradient-lime education-card education-section__list-card">
+                      <picture class="education-card__counter">
+                        <source
+                          srcset="images/counter-1@2x.webp 2x,
+                                  images/counter-1.webp"
+                                  type="image/webp">
+                        <img
+                          src="images/counter-1.png"
+                          srcset="images/counter-1@2x.png 2x"
+                          alt="Стратегия торговли на торговых парах в крипте"
+                          width="76" height="76">
+                      </picture>
+                      <h3 class="title-size-4 education-card__title">
+                        <a href="javascript:void(0);" class="education-card__link" data-modal="popup-education-1">Стратегия торговли на торговых парах в крипте</a>
+                      </h3>
+                      <div class="content education-card__text">
+                        <p>которая позволяет уделять рынку 2-3 часа в неделю и зарабатывать от +20% за сделку</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="education-section__list-col">
+                    <article class="u-box u-box--theme-gray u-box--hover-gradient-lime education-card education-section__list-card">
+                      <picture class="education-card__counter">
+                        <source
+                          srcset="images/counter-2@2x.webp 2x,
+                                  images/counter-2.webp"
+                                  type="image/webp">
+                        <img
+                          src="images/counter-2.png"
+                          srcset="images/counter-2@2x.png 2x"
+                          alt="Доход «здесь и сейчас»"
+                          width="76" height="76">
+                      </picture>
+                      <h3 class="title-size-4 education-card__title">
+                        <a href="javascript:void(0);" class="education-card__link" data-modal="popup-education-2">Доход «здесь&nbsp;и сейчас»</a>
+                      </h3>
+                      <div class="content education-card__text">
+                        <p>как зарабатывать каждый день на рынке криптовалют</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="education-section__list-col">
+                    <article class="u-box u-box--theme-gray u-box--hover-gradient-lime education-card education-section__list-card">
+                      <picture class="education-card__counter">
+                        <source
+                          srcset="images/counter-3@2x.webp 2x,
+                                  images/counter-3.webp"
+                                  type="image/webp">
+                        <img
+                          src="images/counter-3.png"
+                          srcset="images/counter-3@2x.png 2x"
+                          alt="Стейкинг и Фарминг"
+                          width="76" height="76">
+                      </picture>
+                      <h3 class="title-size-4 education-card__title">
+                        <a href="javascript:void(0);" class="education-card__link" data-modal="popup-education-3">Стейкинг и Фарминг</a>
+                      </h3>
+                      <div class="content education-card__text">
+                        <p>альтернатива банковскому вкладу с повышенным доходом</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="education-section__list-col">
+                    <article class="u-box u-box--theme-gray u-box--hover-gradient-lime education-card education-section__list-card">
+                      <picture class="education-card__counter">
+                        <source
+                          srcset="images/counter-4@2x.webp 2x,
+                                  images/counter-4.webp"
+                                  type="image/webp">
+                        <img
+                          src="images/counter-4.png"
+                          srcset="images/counter-4@2x.png 2x"
+                          alt="Стратегии на DeFi"
+                          width="76" height="76">
+                      </picture>
+                      <h3 class="title-size-4 education-card__title">
+                        <a href="javascript:void(0);" class="education-card__link" data-modal="popup-education-4">Стратегии на DeFi</a>
+                      </h3>
+                      <div class="content education-card__text">
+                        <p>инвестиции в крипту без посредников</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="education-section__list-col">
+                    <article class="u-box u-box--theme-gray u-box--hover-gradient-lime education-card education-section__list-card">
+                      <picture class="education-card__counter">
+                        <source
+                          srcset="images/counter-5@2x.webp 2x,
+                                  images/counter-5.webp"
+                                  type="image/webp">
+                        <img
+                          src="images/counter-5.png"
+                          srcset="images/counter-5@2x.png 2x"
+                          alt="ICO"
+                          width="76" height="76">
+                      </picture>
+                      <h3 class="title-size-4 education-card__title">
+                        <a href="javascript:void(0);" class="education-card__link" data-modal="popup-education-5">ICO</a>
+                      </h3>
+                      <div class="content education-card__text">
+                        <p>как делать иксы на проектах, которые только выходят</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="education-section__list-col">
+                    <article class="u-box u-box--theme-gray u-box--hover-gradient-lime education-card education-section__list-card">
+                      <picture class="education-card__counter">
+                        <source
+                          srcset="images/counter-6@2x.webp 2x,
+                                  images/counter-6.webp"
+                                  type="image/webp">
+                        <img
+                          src="images/counter-6.png"
+                          srcset="images/counter-6@2x.png 2x"
+                          alt="Заработок на NFT"
+                          width="76" height="76">
+                      </picture>
+                      <h3 class="title-size-4 education-card__title">
+                        <a href="javascript:void(0);" class="education-card__link" data-modal="popup-education-6">Заработок на NFT</a>
+                      </h3>
+                      <div class="content education-card__text">
+                        <p>инвестиции в цифровые произведения искусства</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="education-section__list-col">
+                    <article class="u-box u-box--theme-gray u-box--hover-gradient-lime education-card education-section__list-card">
+                      <picture class="education-card__counter">
+                        <source
+                          srcset="images/counter-7@2x.webp 2x,
+                                  images/counter-7.webp"
+                                  type="image/webp">
+                        <img
+                          src="images/counter-7.png"
+                          srcset="images/counter-7@2x.png 2x"
+                          alt="Инвестирование в надежные монеты и токены"
+                          width="76" height="76">
+                      </picture>
+                      <h3 class="title-size-4 education-card__title">
+                        <a href="javascript:void(0);" class="education-card__link" data-modal="popup-education-7">Инвестирование в&nbsp;надежные монеты и токены</a>
+                      </h3>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <footer class="row education-section__footer">
+                <div class="row__col--7 education-section__footer-col education-section__footer-col--text">
+                  <div class="content education-section__footer-text">
+                    <p>Курс поможет зарабатывать как «здесь и сейчас», так и на долгосрочной основе. По окончании курса вы получите сертификат школы. Обучать будут опытные преподаватели имеющие аттестат ЦБ. После обучения у вас будет доступ к закрытому клубу, где проходят различные эфиры с резидентами клуба, ежедневная аналитика по крипто валютному рынку.</p>
+                  </div>
+                </div>
+                <div class="row__col--4 education-section__footer-col education-section__footer-col--action">
+                  <a href="#" class="btn btn--theme-lime btn--size-md education-section__footer-btn">
+                    <span class="btn__inner">
+                      <span class="btn__title">Записаться на курс</span>
+                    </span>
+                  </a>
+                </div>
+              </footer>
+            </div>
+          </section>
+          <!-- education-section END -->
+          <picture class="circle-blur circle-blur--size-md circle-blur--7">
+            <source
+              srcset="images/circle-blur-1@2x.webp 2x,
+                      images/circle-blur-1.webp"
+                      type="image/webp">
+            <img
+              src="images/circle-blur-1.png"
+              srcset="images/circle-blur-1@2x.png 2x"
+              width="1240" height="1240">
+          </picture>
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      <div class="popup-wrapper">
+        @@include('html/modal.html')
+      </div>
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

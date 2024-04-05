@@ -1,0 +1,375 @@
+<div class="popup" data-popup="popup-form" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="u-box u-box--theme-gray popup__content popup__content--size-sm">
+      <picture class="popup__picture popup__picture--1">
+        <!--<source
+          srcset="images/modal-img-1@2x.webp 2x,
+                  images/modal-img-1.webp"
+                  type="image/webp">-->
+        <img
+          src="images/modal-img-1.png"
+          srcset="images/modal-img-1@2x.png 2x"
+          width="155" height="189">
+      </picture>
+      <picture class="popup__picture popup__picture--2">
+        <!--<source
+          srcset="images/modal-img-2@2x.webp 2x,
+                  images/modal-img-2.webp"
+                  type="image/webp">-->
+        <img
+          src="images/modal-img-2.png"
+          srcset="images/modal-img-2@2x.png 2x"
+          width="119" height="200">
+      </picture>
+      <button type="button" class="js-modal-btn-close btn-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <form action="#" class="popup__form">
+          <div class="u-control popup__form-line">
+            <input type="text" name="form_call_name" class="u-input u-input--theme-white u-input--size-md u-control__input is-error" required placeholder="Имя" value="Lv%">
+            <p class="u-error u-control__error">error</p>
+          </div>
+          <div class="u-control popup__form-line">
+            <select name="form_call_services" id="js-select-services-init" class="js-select-services u-input u-input--theme-white u-input--size-md  u-input--type-select u-control__input">
+              <option value="Выберите интересующий вас тип услуги" selected disabled>Выберите интересующий вас тип услуги</option>
+              <option value="Услуги разработки">Услуги разработки</option>
+              <option value="Криптообмен">Криптообмен</option>
+              <option value="Серверы">Серверы</option>
+              <option value="Служба безопасности">Служба безопасности</option>
+              <option value="Хранилище данных">Хранилище данных</option>
+              <option value="Обучение">Обучение</option>
+              <option value="Купить акции">Купить акции</option>
+            </select>
+            <p class="u-error u-control__error">error</p>
+          </div>
+          <div class="u-control popup__form-line">
+            <input type="tel" name="form_call_phone" class="u-input u-input--theme-white u-input--size-md u-control__input" required placeholder="Ваш телефон">
+            <p class="u-error u-control__error">error</p>
+          </div>
+          <p class="popup__form-captcha">ReCaptch</p>
+          <div class="u-control popup__form-line">
+            <input type="text" name="form_call_captcha" class="u-input u-input--theme-white u-input--size-md u-control__input" required placeholder="Введите числа с картинки">
+            <p class="u-error u-control__error">error</p>
+          </div>
+          <p class="popup__form-privacy">Нажимая на эту кнопку, вы даете согласие на обработку <a href="privacy.html" target="_blank">персональных данных</a></p>
+          <button class="btn btn--theme-accent btn--size-sm popup__form-btn" data-modal="popup-thanks">
+            <span class="btn__inner">
+              <span class="btn__title">Связаться с нами</span>
+            </span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-popup="popup-thanks" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="u-box u-box--theme-gray popup__content popup__content--size-sm">
+      <picture class="popup__picture popup__picture--1">
+        <!--<source
+          srcset="images/modal-img-1@2x.webp 2x,
+                  images/modal-img-1.webp"
+                  type="image/webp">-->
+        <img
+          src="images/modal-img-1.png"
+          srcset="images/modal-img-1@2x.png 2x"
+          width="155" height="189">
+      </picture>
+      <picture class="popup__picture popup__picture--2">
+        <!--<source
+          srcset="images/modal-img-2@2x.webp 2x,
+                  images/modal-img-2.webp"
+                  type="image/webp">-->
+        <img
+          src="images/modal-img-2.png"
+          srcset="images/modal-img-2@2x.png 2x"
+          width="119" height="200">
+      </picture>
+      <button type="button" class="js-modal-btn-close btn-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <div class="popup__thanks">
+          <p class="title title-size-4 popup__thanks-title">Ваша заявка<br>успешно отправлена!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-popup="popup-services-1" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="u-box u-box--theme-gradient-accent popup__content popup__content--size-semi">
+      <picture class="popup__picture popup__picture--3">
+        <!--<source
+          srcset="images/modal-img-3@2x.webp 2x,
+                  images/modal-img-3.webp"
+                  type="image/webp">-->
+        <img
+          src="images/modal-img-3.png"
+          srcset="images/modal-img-3@2x.png 2x"
+          width="123" height="542">
+      </picture>
+      <button type="button" class="js-modal-btn-close btn-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <div class="popup__services">
+          <p class="title title-size-2 popup__services-title">Децентрализованное хранилище</p>
+          <div class="popup__services-content">
+            <div class="content title-size-2 popup__services-description">
+              <p>Безопасное децентрализованное хранение ваших файлов.</p>
+              <p>Обеспечьте надежную безопасность для ваших файлов — от фотографий до тяжелых данных.</p>
+              <p>При загрузке файлы автоматически разбиваются на части, шифруются и отправляются по десяткам устройств (НОД) в блокчейн-сети.</p>
+            </div>
+            <div class="popup__services-card">
+              <p class="title title-size-4 popup__services-card-title">Основной пакет:</p>
+              <div class="content popup__services-card-text">
+                <p>— 10 GB децентрализованного хранилища в месяц<br>— 2980 рублей за основной пакет</p>
+              </div>
+            </div>
+            <div class="popup__services-card">
+              <p class="title title-size-4 popup__services-card-title">Дополнительное пространство:</p>
+              <div class="content popup__services-card-text">
+                <p>— При расширении децентрализованного хранилища свыше 10&nbsp;GB&nbsp;—&nbsp;дополнительные 50 рублей за каждый 1 GB.</p>
+              </div>
+            </div>
+            <div class="popup__services-card">
+              <p class="title title-size-4 popup__services-card-title">Обеспечьте безопасность и гибкость хранения с нашим децентрализованным сервисом. Децентрализованное хранилище!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-popup="popup-education-1" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="u-box u-box--theme-gradient-accent popup__content popup__content--size-md">
+      <picture class="popup__picture popup__picture--4">
+        <!--<source
+          srcset="images/modal-img-3@2x.webp 2x,
+                  images/modal-img-3.webp"
+                  type="image/webp">-->
+        <img
+          src="images/modal-img-3.png"
+          srcset="images/modal-img-3@2x.png 2x"
+          width="123" height="542">
+      </picture>
+      <button type="button" class="js-modal-btn-close btn-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <div class="popup__education">
+          <p class="title title-size-4 popup__education-title">Стратегия торговли на торговых парах в крипте</p>
+          <div class="content popup__education-text">
+            <p>Не хотите сутками «пялиться» в монитор, отслеживая малейшие колебания криптовалют? В этом случае вам подойдёт стратегия позиционной торговли.</p>
+            <p>Вам потребуется всего лишь пару часов в неделю уделять анализу рынка, а прибыль будет не меньше чем от ежедневной торговли. Простота и уникальность стратегии заключается в том, что вам не надо будет разрисовывать график различными рисунками, как это делает большинство начинающих.</p>
+            <p>Вы изучите простой, понятный алгоритм действий в основе которого лежат фундаментальные данные рынка, что и приведет вас к стабильному доходу.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-popup="popup-education-2" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="u-box u-box--theme-gradient-accent popup__content popup__content--size-md">
+      <picture class="popup__picture popup__picture--4">
+        <!--<source
+          srcset="images/modal-img-3@2x.webp 2x,
+                  images/modal-img-3.webp"
+                  type="image/webp">-->
+        <img
+          src="images/modal-img-3.png"
+          srcset="images/modal-img-3@2x.png 2x"
+          width="123" height="542">
+      </picture>
+      <button type="button" class="js-modal-btn-close btn-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <div class="popup__education">
+          <p class="title title-size-4 popup__education-title">Доход «здесь и сейчас»</p>
+          <div class="content popup__education-text">
+            <p>Хотите научиться извлекать прибыль на криптовалюте не дожидаясь буранов и прочих хайп новостей? Тогда вам необходимо изучить стратегии дохода «здесь и сейчас» именно эти стратегии позволят вам зарабатывать на любом рынке.</p>
+            <p>Стратегии преподаёт наш лучший специалист в области торговли, имеющий сертификат от ЦБ.</p>
+            <p>При этом вы будете практиковаться под руководством опытных кураторов, которые прошли когда-то такой же путь обучения.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-popup="popup-education-3" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="u-box u-box--theme-gradient-accent popup__content popup__content--size-md">
+      <picture class="popup__picture popup__picture--4">
+        <!--<source
+          srcset="images/modal-img-3@2x.webp 2x,
+                  images/modal-img-3.webp"
+                  type="image/webp">-->
+        <img
+          src="images/modal-img-3.png"
+          srcset="images/modal-img-3@2x.png 2x"
+          width="123" height="542">
+      </picture>
+      <button type="button" class="js-modal-btn-close btn-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <div class="popup__education">
+          <p class="title title-size-4 popup__education-title">Стейкинг и Фарминг</p>
+          <div class="content popup__education-text">
+            <p>Только представьте, вы получаете доход от 20% годовых в растущем активе!</p>
+            <p>При этом ваш вклад защищён от различных блокировок и заморозок транзакции. На ваш вклад нет санкций, нет доступа сотрудников банка и прочих лиц, покушавшихся на ваши "кровные". Как и где открывать такие вклады, вы узнаете на нашем обучении. </p>
+            <p>И самое главное свой первый вклад сделаете под руководством опытных кураторов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-popup="popup-education-4" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="u-box u-box--theme-gradient-accent popup__content popup__content--size-md">
+      <picture class="popup__picture popup__picture--4">
+        <!--<source
+          srcset="images/modal-img-3@2x.webp 2x,
+                  images/modal-img-3.webp"
+                  type="image/webp">-->
+        <img
+          src="images/modal-img-3.png"
+          srcset="images/modal-img-3@2x.png 2x"
+          width="123" height="542">
+      </picture>
+      <button type="button" class="js-modal-btn-close btn-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <div class="popup__education">
+          <p class="title title-size-4 popup__education-title">Инвестирование в надежные монеты и токены</p>
+          <div class="content popup__education-text">
+            <p>Вы ещё не знаете как выбирать проекты в криптовалютах, чтобы не потерять свои деньги?</p>
+            <p>Если вы не понимаете куда смотреть и как анализировать проект, чтобы не набрать в свой портфель кучу "Щиткоинов" ? На обучении вы разберётесь как анализировать и где брать данные для анализа того или иного проекта, чтобы собрать в свой портфель только надёжные, перспективные проекты. А также будете по щелчку взгляда видеть мошенников.</p>
+            <p>Вы наконец то поймете что такое ончейн метрика, научитесь видеть покупки крупных капиталов и будете заходить в проекты вместе с "китами" рынка.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-popup="popup-education-5" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="u-box u-box--theme-gradient-accent popup__content popup__content--size-md">
+      <picture class="popup__picture popup__picture--4">
+        <!--<source
+          srcset="images/modal-img-3@2x.webp 2x,
+                  images/modal-img-3.webp"
+                  type="image/webp">-->
+        <img
+          src="images/modal-img-3.png"
+          srcset="images/modal-img-3@2x.png 2x"
+          width="123" height="542">
+      </picture>
+      <button type="button" class="js-modal-btn-close btn-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <div class="popup__education">
+          <p class="title title-size-4 popup__education-title">ICO</p>
+          <div class="content popup__education-text">
+            <p>Думаете упустили возможность войти в Биткоин на ранней стадии, когда он стоил копейки и сейчас нет таких возможностей получить тысячи процентов роста по активу?</p>
+            <p>Тогда вы сильно заблуждаетесь! Изучив стратегии ICO вы будете видеть на ранней стадии перспективные проекты, которые могут вам дать тысячи и более процентов на ваши вложения.</p>
+            <p>Научитесь искать и главное будете знать где покупать монеты таких проектов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-popup="popup-education-6" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="u-box u-box--theme-gradient-accent popup__content popup__content--size-md">
+      <picture class="popup__picture popup__picture--4">
+        <!--<source
+          srcset="images/modal-img-3@2x.webp 2x,
+                  images/modal-img-3.webp"
+                  type="image/webp">-->
+        <img
+          src="images/modal-img-3.png"
+          srcset="images/modal-img-3@2x.png 2x"
+          width="123" height="542">
+      </picture>
+      <button type="button" class="js-modal-btn-close btn-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <div class="popup__education">
+          <p class="title title-size-4 popup__education-title">Стратегии на DeFi</p>
+          <div class="content popup__education-text">
+            <p>Хотите иметь в кармане собственный банк? Или может для вас DeFi это непонятное слово которым иногда блещут различные специалисты в крипто индустрии? </p>
+            <p>Тогда вам обязательно нужно изучить стратегии инвестиций на DeFi. Изучив стратегии DeFi вы войдёте в 1% пользователей от всей многочисленной толпы "криптанов", которые так и не познали прелести настоящей децентрализации криптовалют.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-popup="popup-education-7" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="u-box u-box--theme-gradient-accent popup__content popup__content--size-md">
+      <picture class="popup__picture popup__picture--4">
+        <!--<source
+          srcset="images/modal-img-3@2x.webp 2x,
+                  images/modal-img-3.webp"
+                  type="image/webp">-->
+        <img
+          src="images/modal-img-3.png"
+          srcset="images/modal-img-3@2x.png 2x"
+          width="123" height="542">
+      </picture>
+      <button type="button" class="js-modal-btn-close btn-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <div class="popup__education">
+          <p class="title title-size-4 popup__education-title">Заработок на NFT</p>
+          <div class="content popup__education-text">
+            <p>Вишенкой на торте всего обучения нашей школы, будет для вас, стратегия инвестиций в непонятные для многих картинки NFT.</p>
+            <p>Здесь вы поймёте, что это не просто картинки, но это перспективное направление крипто индустрии. Научитесь выбирать именно те картинки, которые будут впоследствии только дорожать, как предметы искусства или другие ценные вещи.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

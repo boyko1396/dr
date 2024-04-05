@@ -1,0 +1,292 @@
+.education-section {
+  padding: var(--rhythm-1) 0;
+  position: relative;
+  &__container {
+  }
+  &__title {
+    margin: 0 0 var(--rhythm-2);
+    text-transform: uppercase;
+    @media (max-width: $lg) {
+      max-width: 50%;
+      padding-right: var(--gap);
+    }
+    @media (max-width: $md) {
+      max-width: 83.33%;
+    }
+  }
+  &__text {
+    max-width: 834rem;
+    margin: 0 0 var(--rhythm-2);
+    @media (max-width: $lg) {
+      max-width: 50%;
+      margin-bottom: 100rem;
+      padding-right: var(--gap);
+      font-family: $fontAccent;
+    }
+    @media (max-width: $md) {
+      max-width: 83.33%;
+      margin: 0 0 var(--rhythm-2);
+    }
+    @media (max-width: $sm) {
+      max-width: 100%;
+      margin-right: var(--gap);
+    }
+  }
+  &__picture {
+    width: 420rem;
+    position: absolute;
+    top: -334rem;
+    right: 100rem;
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+    @media (max-width: $exl) {
+      width: 376rem;
+      top: -310rem;
+      right: 80rem;
+    }
+    @media (max-width: $lg) {
+      width: 326rem;
+      top: -268rem;
+      right: 10rem;
+      transform: rotate(31deg);
+    }
+    @media (max-width: $md) {
+      width: 240rem;
+      top: -428rem;
+      right: -120rem;
+    }
+    @media (max-width: $sm) {
+      width: 220rem;
+      top: -472rem;
+      right: -80rem;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__list {
+    margin: 0 var(--gap-) var(--gap-fluid-);
+    padding-bottom: var(--rhythm-6);
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    @media (max-width: $lg) {
+      margin-right: -6rem;
+      margin-bottom: -12rem;
+      margin-left: -6rem;
+      padding-bottom: 32rem;
+    }
+    @media (max-width: $md) {
+      padding: 0 44rem;
+      margin-bottom: 56rem;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: var(--rhythm-2);
+      padding-right: 0;
+      padding-left: 0;
+    }
+    &-wrapper {
+      position: relative;
+    }
+    &-col {
+      max-width: 25%;
+      margin: 0 0 var(--gap-fluid);
+      padding: 0 var(--gap);
+      flex: 0 0 25%;
+      @media (max-width: $lg) {
+        margin-bottom: 12rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
+      }
+      @media (max-width: $md) {
+        margin-bottom: 0;
+      }
+      &:nth-child(1) {
+        max-width: 22.5%;
+        margin-bottom: 0;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        flex-basis: 22.5%;
+        transform: rotate(-11.83deg) translate3d(68rem, -50%, 0);
+        z-index: 1;
+        @media (max-width: $lg) {
+          max-width: 26.5%;
+          transform: rotate(-7.51deg) translate3d(39rem, -90%, 0);
+        }
+        @media (max-width: $md) {
+          max-width: 100%;
+          position: relative;
+          top: 0;
+          flex: 0 0 100%;
+          transform: none;
+        }
+      }
+      &:nth-child(2) {
+        max-width: 28.21%;
+        flex-basis: 28.21%;
+        @media (max-width: $lg) {
+          max-width: 26.35%;
+          flex-basis: 26.35%;
+        }
+        @media (max-width: $md) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+      }
+      &:nth-child(3) {
+        max-width: 25.95%;
+        flex-basis: 25.95%;
+        @media (max-width: $lg) {
+          max-width: 26.25%;
+          flex-basis: 26.25%;
+        }
+        @media (max-width: $md) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+      }
+      &:nth-child(4) {
+        max-width: 23.9%;
+        flex-basis: 23.9%;
+        @media (max-width: $lg) {
+          max-width: 20.3%;
+          flex-basis: 20.3%;
+        }
+        @media (max-width: $md) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+      }
+      &:nth-child(5) {
+        max-width: 23.335%;
+        flex-basis: 23.335%;
+        @media (max-width: $lg) {
+          max-width: 29.3%;
+          flex-basis: 29.3%;
+        }
+        @media (max-width: $md) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+      }
+      &:nth-child(6) {
+        max-width: 24.08%;
+        flex-basis: 24.08%;
+        @media (max-width: $lg) {
+          max-width: 28.8%;
+          flex-basis: 28.8%;
+        }
+        @media (max-width: $md) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+      }
+      &:nth-child(7) {
+        max-width: 23.08%;
+        margin-right: 5.4%;
+        flex-basis: 23.08%;
+        @media (max-width: $lg) {
+          max-width: 27.2%;
+          margin-right: 3.4%;
+          flex-basis: 27.2%;
+        }
+        @media (max-width: $md) {
+          max-width: 100%;
+          margin-right: 0;
+          flex: 0 0 100%;
+        }
+      }
+      &:not(:last-child) {
+        @media (max-width: $md) {
+          margin-bottom: 24rem;
+        }
+        @media (max-width: $sm) {
+          margin-bottom: 8rem;
+        }
+      }
+    }
+    &-card {
+      height: 100%;
+      @media (max-width: $exl) {
+        padding: 44rem;
+      }
+      @media (max-width: $lg) {
+        padding: 32rem;
+      }
+      @media (max-width: $md) {
+        padding: 20rem;
+      }
+      @media (max-width: $sm) {
+        margin-left: 70rem;
+      }
+    }
+  }
+  &__footer {
+    justify-content: space-between;
+    align-items: flex-end;
+    &-col {
+      &--text {
+        @media (max-width: $exl) {
+          max-width: 66.6666666667%;
+          flex-basis: 66.6666666667%;
+        }
+        @media (max-width: $lg) {
+          max-width: 50%;
+          flex-basis: 50%;
+        }
+        @media (max-width: $md) {
+          max-width: 83.33%;
+          flex-basis: 83.33%;
+        }
+        @media (max-width: $sm) {
+          max-width: 100%;
+          padding-right: 20rem;
+          flex-basis: 100%;
+        }
+      }
+      &--action {
+        @media (max-width: $lg) {
+          max-width: 50%;
+          flex-basis: 50%;
+          text-align: right;
+        }
+        @media (max-width: $md) {
+          max-width: 83.33%;
+          flex-basis: 83.33%;
+          text-align: left;
+        }
+      }
+    }
+    &-text {
+      max-width: 880rem;
+      @media (max-width: $lg) {
+        font-family: $fontAccent;
+      }
+      @media (max-width: $md) {
+        margin-bottom: var(--rhythm-2);
+      }
+    }
+    &-btn {
+      @media (max-width: $exl) {
+        padding-right: 30rem;
+        padding-left: 30rem;
+      }
+      @media (max-width: $lg) {
+        padding-right: 46rem;
+        padding-left: 46rem;
+      }
+      @media (max-width: $md) {
+        padding-right: 36rem;
+        padding-left: 36rem;
+      }
+      @media (max-width: $sm) {
+        padding-right: 32rem;
+        padding-left: 32rem;
+      }
+    }
+  }
+}

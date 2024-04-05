@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Decentralized decisions - Документы'
+  })
+  <body>
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header header--sticky'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- typical-section BEGIN -->
+          <section class="typical-section">
+            <picture class="circle-blur circle-blur--size-md circle-blur--8">
+              <source
+                srcset="images/circle-blur-1@2x.webp 2x,
+                        images/circle-blur-1.webp"
+                        type="image/webp">
+              <img
+                src="images/circle-blur-1.png"
+                srcset="images/circle-blur-1@2x.png 2x"
+                width="1240" height="1240">
+            </picture>
+            <div class="container container--size-md typical-section__container">
+              <ul class="u-breadcrumbs typical-section__breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a href="https://example.com/" itemprop="item">
+                    <span itemprop="name">Главная</span>
+                  </a>
+                  <meta itemprop="position" content="1"/>
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <span itemprop="name">Документы</span>
+                  <meta itemprop="position" content="2"/>
+                </li>
+              </ul>
+              <h1 class="typical-section__title">Документы</h1>
+              <div class="typical-section__documents">
+                <div class="row typical-section__documents-row">
+                  <div class="row__col--6 typical-section__documents-col typical-section__documents-col--media">
+                    <picture class="typical-section__documents-picture">
+                      <source
+                        srcset="images/document-img-1@2x.webp 2x,
+                                images/document-img-1.webp"
+                                type="image/webp">
+                      <img
+                        src="images/document-img-1.jpg"
+                        srcset="images/document-img-1@2x.jpg 2x"
+                        width="790" height="1119">
+                    </picture>
+                  </div>
+                  <div class="row__col--6 typical-section__documents-col typical-section__documents-col--nav">
+                    <div class="typical-section__documents-list">
+                      <a href="#" class="title title-size-4 u-box u-box--theme-gradient-accent u-box--hover-gradient-lime typical-section__documents-list-link">Выписка из ИРГЮЛ</a>
+                      <a href="#" class="title title-size-4 u-box u-box--theme-gradient-accent u-box--hover-gradient-lime typical-section__documents-list-link">Карточка предприятия АО УК ДР</a>
+                      <a href="#" class="title title-size-4 u-box u-box--theme-gradient-accent u-box--hover-gradient-lime typical-section__documents-list-link">Карточка предприятия ООО ДР</a>
+                    </div>
+                      <picture class="u-decor u-decor--9">
+                        <source
+                          srcset="images/decor-9@2x.webp 2x,
+                                  images/decor-9.webp"
+                                  type="image/webp">
+                        <img
+                          src="images/decor-9.png"
+                          srcset="images/decor-9@2x.png 2x"
+                          width="342" height="742">
+                      </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- typical-section END -->
+          <picture class="circle-blur circle-blur--size-md circle-blur--11">
+            <source
+              srcset="images/circle-blur-1@2x.webp 2x,
+                      images/circle-blur-1.webp"
+                      type="image/webp">
+            <img
+              src="images/circle-blur-1.png"
+              srcset="images/circle-blur-1@2x.png 2x"
+              width="1240" height="1240">
+          </picture>
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      <div class="popup-wrapper">
+        @@include('html/modal.html')
+      </div>
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

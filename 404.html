@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Decentralized decisions - 404'
+  })
+  <body>
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header header--sticky'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <picture class="circle-blur circle-blur--size-md circle-blur--1">
+            <source
+              srcset="images/circle-blur-1@2x.webp 2x,
+                      images/circle-blur-1.webp"
+                      type="image/webp">
+            <img
+              src="images/circle-blur-1.png"
+              srcset="images/circle-blur-1@2x.png 2x"
+              width="1240" height="1240">
+          </picture>
+          <!-- not-found-section BEGIN -->
+          <section class="not-found-section">
+            <div class="container container--size-md not-found-section__container">
+              <h1 class="visually-hidden">Данная страница отсутствует на&nbsp;нашем сайте</h1>
+              <picture class="not-found-section__picture">
+                <source
+                  srcset="images/error-404@2x.webp 2x,
+                          images/error-404.webp"
+                          type="image/webp">
+                <img
+                  src="images/error-404.png"
+                  srcset="images/error-404@2x.png 2x"
+                  alt="Данная страница отсутствует на нашем сайте"
+                  width="1035" height="395">
+              </picture>
+              <h3 class="not-found-section__subitle">Данная страница отсутствует на&nbsp;нашем сайте</h3>
+              <a href="#" class="btn btn--theme-accent btn--size-md not-found-section__btn">
+                <span class="btn__inner">
+                  <span class="btn__title">Перейти на главную</span>
+                </span>
+              </a>
+            </div>
+          </section>
+          <!-- not-found-section END -->
+          <picture class="circle-blur circle-blur--size-md circle-blur--7">
+            <source
+              srcset="images/circle-blur-1@2x.webp 2x,
+                      images/circle-blur-1.webp"
+                      type="image/webp">
+            <img
+              src="images/circle-blur-1.png"
+              srcset="images/circle-blur-1@2x.png 2x"
+              width="1240" height="1240">
+          </picture>
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      <div class="popup-wrapper">
+        @@include('html/modal.html')
+      </div>
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

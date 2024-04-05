@@ -1,0 +1,301 @@
+.intro-section {
+  padding: 20rem 0 100rem;
+  position: relative;
+  @media (max-width: $lg) {
+    padding: 0 0 var(--rhythm-1);
+  }
+  @media (max-width: $sm) {
+    padding-bottom: 150rem;
+  }
+  &__container {
+    @media (max-width: $lg) {
+      margin-top: -4rem;
+    }
+    @media (max-width: $md) {
+      margin-top: -8rem;
+    }
+    @media (max-width: $sm) {
+      margin-top: 0;
+    }
+  }
+  &__list {
+    $gap: 20rem;
+    margin: 0 var(--rhythm-13-);
+    display: flex;
+    position: relative;
+    @media (max-width: $exl) {
+      margin: 0 var(--gap-);
+    }
+    @media (max-width: $lg) {
+      padding-top: 12rem;
+    }
+    @media (max-width: $md) {
+      margin-bottom: -8rem;
+      padding-top: 8rem;
+      flex-wrap: wrap;
+    }
+    &-col {
+      max-width: 100%;
+      padding: 0 var(--rhythm-13);
+      flex: 1;
+      @media (max-width: $exl) {
+        padding: 0 var(--gap);
+      }
+      @media (max-width: $lg) {
+      }
+      @media (max-width: $md) {
+        margin-bottom: 8rem;
+      }
+      &:nth-child(1) {
+        max-width: 16.7%;
+        flex-basis: 16.7%;
+        @media (max-width: $lg) {
+          max-width: 20.94%;
+          flex-basis: 20.94%;
+          order: -6;
+        }
+        @media (max-width: $md) {
+          max-width: 30.2%;
+          flex-basis: 30.2%;
+        }
+        @media (max-width: $sm) {
+          max-width: 39.2%;
+          flex-basis: 39.2%;
+        }
+      }
+      &:nth-child(2) {
+        max-width: 16.9%;
+        flex-basis: 16.9%;
+        @media (max-width: $lg) {
+          max-width: 21.7%;
+          flex-basis: 21.7%;
+        }
+        @media (max-width: $md) {
+          max-width: 28.7%;
+          flex-basis: 28.7%;
+        }
+        @media (max-width: $sm) {
+          max-width: 42.8%;
+          flex-basis: 42.8%;
+        }
+      }
+      &:nth-child(3) {
+        max-width: 21.05%;
+        flex-basis: 21.05%;
+        @media (max-width: $lg) {
+          max-width: 28.06%;
+          flex-basis: 28.06%;
+        }
+        @media (max-width: $md) {
+          max-width: 41.1%;
+          flex-basis: 41.1%;
+          order: -5;
+        }
+        @media (max-width: $sm) {
+          max-width: 57.2%;
+          flex-basis: 57.2%;
+          order: -3;
+        }
+        .benefits-hero-card__picture {
+          @media (max-width: $md) {
+            width: 62rem;
+            height: 62rem;
+          }
+        }
+      }
+      &:nth-child(4) {
+        max-width: 22.3%;
+        flex-basis: 22.3%;
+        @media (max-width: $lg) {
+          max-width: 29.3%;
+          flex-basis: 29.3%;
+        }
+        @media (max-width: $md) {
+          max-width: 49%;
+          flex-basis: 49%;
+        }
+        @media (max-width: $sm) {
+          max-width: 60.8%;
+          flex-basis: 60.8%;
+          order: -4;
+        }
+        .benefits-hero-card__picture {
+          @media (max-width: $lg) {
+            top: initial;
+            bottom: -24rem;
+            right: -8rem;
+          }
+          @media (max-width: $md) {
+            width: 70rem;
+            height: 70rem;
+          }
+          @media (max-width: $sm) {
+            width: 50rem;
+            height: 50rem;
+            top: -12rem;
+            right: -5rem;
+            bottom: initial;
+          }
+        }
+      }
+      &:nth-child(5) {
+        flex-grow: 1;
+        @media (max-width: $lg) {
+          max-width: 29.3%;
+          flex-basis: 29.3%;
+          position: absolute;
+          right: 0;
+          bottom: 100%;
+        }
+        @media (max-width: $md) {
+          max-width: 51%;
+          flex-basis: 51%;
+          position: relative;
+          bottom: 0;
+        }
+        @media (max-width: $sm) {
+          max-width: 64.4%;
+          margin-left: auto;
+          flex-basis: 64.4%;
+        }
+      }
+    }
+    &-card {
+      height: 100%;
+      @media (max-width: $exl) {
+        z-index: 2;
+      }
+      @media (max-width: $md) {
+        z-index: initial;
+      }
+      @media (max-width: $sm) {
+        z-index: 2;
+      }
+    }
+  }
+  &__box {
+    margin: 0 0 36rem;
+    padding-right: 21.5%;
+    position: relative;
+    z-index: 1;
+    @media (max-width: $exl) {
+      margin-bottom: var(--rhythm-3);
+      padding-right: 15%;
+    }
+    @media (max-width: $lg) {
+      margin-bottom: 0;
+      padding-right: 29.3%;
+    }
+    @media (max-width: $md) {
+      padding-right: 0;
+    }
+    @media (max-width: $sm) {
+      position: static;
+    }
+  }
+  &__main {
+    padding: 200rem 90rem 168rem 70rem;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 0;
+    @media (max-width: $lg) {
+      padding: 144rem 32rem;
+    }
+    @media (max-width: $md) {
+      padding: 100rem 24rem 74rem 30rem;
+    }
+    @media (max-width: $sm) {
+      padding: 100rem 19rem;
+    }
+    &-content {
+      padding-right: 15rem;
+      flex-grow: 1;
+      @media (max-width: $md) {
+        padding-right: 0;
+      }
+    }
+    &-title {
+      margin: 0 0 6rem -.07em;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: .01em;
+      @media (max-width: $lg) {
+        margin-bottom: 8rem;
+      }
+      @media (max-width: $sm) {
+        margin-bottom: 1rem;
+      }
+      span {
+        margin: 0 0 5rem .2em;
+        display: block;
+        font-size: var(--fs-2);
+        letter-spacing: 0;
+        @media (max-width: $lg) {
+          margin-bottom: 3rem;
+          letter-spacing: .01em;
+        }
+        @media (max-width: $sm) {
+          font-size: 18rem;
+        }
+      }
+    }
+    &-subtitle {
+      margin: 0;
+      font-size: var(--fs-3);
+      line-height: $lineHeightMd;
+      @media (max-width: $lg) {
+        font-size: 16rem;
+        line-height: $lineHeightLg;
+      }
+      @media (max-width: $md) {
+        font-size: 14rem;
+      }
+      @media (max-width: $sm) {
+        font-size: 12rem;
+      }
+    }
+    &-btn {
+      flex-shrink: 0;
+      @media (max-width: $lg) {
+        margin-top: -12rem;
+      }
+      @media (max-width: $md) {
+        margin: 0;
+        position: absolute;
+        top: 136rem;
+        right: 16rem;
+      }
+      @media (max-width: $sm) {
+        top: 148rem;
+        right: 20rem;
+      }
+    }
+    &-picture {
+      width: 565rem;
+      position: absolute;
+      right: 0;
+      top: 40rem;
+      pointer-events: none;
+      z-index: -1;
+      @media (max-width: $exl) {
+        width: 500rem;
+      }
+      @media (max-width: $lg) {
+        width: 318rem;
+      }
+      @media (max-width: $sm) {
+        width: 244rem;
+        top: initial;
+        right: initial;
+        left: -62rem;
+        bottom: 70rem;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}

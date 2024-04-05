@@ -1,0 +1,154 @@
+$siteResolution: 1px;
+$mainFont: 'Cygre';
+$accentFont: 'Unbounded';
+$accentBlondFont: 'Unbounded Blond';
+$mainWeight: 400;
+$lineHeightELg: 1.82;
+$lineHeightLg: 1.7;
+$lineHeightSemi: 1.6;
+$lineHeightMd: 1.58333333333;
+$lineHeightSm: 1.46;
+$lineHeightLt: 1.20833333333;
+$lineHeightExs: 1.1875;
+$lineHeightDefault: $lineHeightSemi;
+
+$containerWidthFluid: 1760rem;
+
+$gap: 10rem;
+$gapFluid: 20rem;
+
+$whiteColor: #ffffff;
+$blackColor: #1C1C1F;
+$accentColor: #293CA5;
+$accentLightColor: #2C27FF;
+$accentBlueColor: #173C79;
+$limeColor: #92B43E;
+$limeLightColor: #AECC52;
+$grayColor: #B0B0B0;
+$graySilverColor: #DFDFDF;
+$grayDarkColor: #505050;
+$redColor: #9D1010;
+
+$blur1: blur(60px);
+$blur2: blur(30px);
+$blur3: blur(300px);
+
+$gradientAccent1: linear-gradient(126.6deg, rgba($accentLightColor, .24) 0%, rgba($whiteColor, .05) 68.06%);
+$gradientLime1: linear-gradient(126.6deg, rgba($limeLightColor, .7) 0%, rgba($whiteColor, .15) 68.06%);
+
+$fontFamily: $mainFont, Open Sans, sans-serif, Arial;
+$fontAccent: $accentFont, Open Sans, sans-serif, Arial;
+$fontAccentBlond: $accentBlondFont, Open Sans, sans-serif, Arial;
+$fontColor: $whiteColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+
+$radiusXs: 8rem;
+$radiusSm: 10rem;
+$radiusLt: 12rem;
+$radiusMd: 13rem;
+$radiusMdl: 16rem;
+$radiusMg: 20rem;
+$radiusLg: 30rem;
+
+$scrollbarWidth: 6rem;
+
+$exl: 1600px;
+$exl-mf: $exl + 1;
+
+$exll: 1440px;
+$exll-mf: $exl + 1;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 1023px;
+$md-mf: $md + 1;
+
+$sm: 639px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 16rem;
+  --fs-1: 123rem;
+  --fs-2: 48rem;
+  --fs-3: 24rem;
+  --fs-4: 20rem;
+  --fs-5: 18rem;
+  --fs-6: 16rem;
+  --fs-7: 14rem;
+  --gap: 10rem;
+  --gap-: -10rem;
+  --gap-fluid: 20rem;
+  --gap-fluid-: -20rem;
+  --gap-container: 80rem;
+  --gap-container-: -80rem;
+  --rhythm-1: 120rem;
+  --rhythm-2: 48rem;
+  --rhythm-3: 24rem;
+  --rhythm-4: 12rem;
+  --rhythm-5: 310rem;
+  --rhythm-6: 50rem;
+  --rhythm-7: 64rem;
+  --rhythm-8: 100rem;
+  --rhythm-9: 40rem;
+  --rhythm-10: 36rem;
+  --rhythm-11: 150rem;
+  --rhythm-12: 240rem;
+  --rhythm-13: 20rem;
+  --rhythm-1-: -120rem;
+  --rhythm-2-: -48rem;
+  --rhythm-3-: -24rem;
+  --rhythm-4-: -12rem;
+  --rhythm-8-: -100rem;
+  --rhythm-10-: -36rem;
+  --rhythm-13-: -20rem;
+
+  --benefitsCardIconSize: 98rem;
+  @media (max-width: $exll) {
+    --gap-container: 80rem;
+    --gap-container-: -80rem;
+  }
+  @media (max-width: $lg) {
+    --gap: 6rem;
+    --gap-: -6rem;
+    --fs-default: 14rem;
+    --fs-1: 62rem;
+    --fs-2: 24rem;
+    --fs-3: 14rem;
+    --fs-4: 14rem;
+    --rhythm-1: 80rem;
+    --rhythm-2: 32rem;
+    --rhythm-3: 12rem;
+    --rhythm-4: 6rem;
+    --rhythm-4-: -6rem;
+    --rhythm-3-: -12rem;
+    --gap-container: 40rem;
+    --gap-container-: -40rem;
+  }
+  @media (max-width: $md) {
+    --gap: 4rem;
+    --gap-: -4rem;
+    --rhythm-1: 70rem;
+    --fs-3: 12rem;
+    --fs-4: 12rem;
+
+    --benefitsCardIconSize: 78rem;
+  }
+  @media (max-width: $sm) {
+    --fs-default: 12rem;
+    --fs-1: 46rem;
+    --fs-2: 20rem;
+    --gap-container: 10rem;
+    --gap-container-: -10rem;
+
+    --benefitsCardIconSize: 48rem;
+  }
+}

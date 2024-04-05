@@ -1,0 +1,85 @@
+.services-section {
+  padding: var(--rhythm-1) 0;
+  position: relative;
+  &__bg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: var(--rhythm-1);
+    left: 0;
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+    @media (max-width: $lg) {
+      width: 130%;
+      top: 120rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @media (max-width: $md) {
+      width: 100%;
+      top: 70rem;
+    }
+    @media (max-width: $md) {
+      top: 68rem;
+    }
+    img {
+      width: auto;
+      min-width: 100%;
+      height: 719rem;
+      display: block;
+      position: relative;
+      @media (max-width: $exl) {
+        min-width: initial;
+        left: -100rem;
+      }
+      @media (max-width: $lg) {
+        width: 100%;
+        height: auto;
+        left: 0;
+      }
+      @media (max-width: $sm) {
+      }
+    }
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 var(--rhythm-2);
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    margin: 0 0 var(--rhythm-3);
+    @media (max-width: $lg) {
+      padding-bottom: var(--rhythm-3);
+      font-family: $fontAccent;
+    }
+    @media (max-width: $md) {
+      padding-bottom: 0;
+    }
+  }
+  &__slider {
+    .swiper-wrapper {
+      align-items: initial;
+    }
+    &-slide {
+      width: 100%;
+      max-width: 520rem;
+      height: initial;
+      @media (max-width: $lg) {
+        max-width: 392rem;
+      }
+      @media (max-width: $md) {
+        max-width: 330rem;
+      }
+      @media (max-width: $xs) {
+        max-width: calc(100vw - 32rem);
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}
